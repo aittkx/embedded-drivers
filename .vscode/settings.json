@@ -20,5 +20,8 @@
   // Uncomment the target of your chip.
   // "rust-analyzer.cargo.target": "thumbv7m-none-eabi",
   "rust-analyzer.cargo.features": [],
-  "rust-analyzer.linkedProjects": []
+  "rust-analyzer.linkedProjects": [
+    "hcsr04/Cargo.toml",
+    "hcsr04/examples/Cargo.toml"
+  ]
 }

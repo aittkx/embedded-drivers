@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "author": "aittkx",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-c3-rust-1",
+      "id": "esp",
+      "top": -4.76,
+      "left": -4.65,
+      "attrs": { "builder": "rust-nostd-esp" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -46.5,
+      "left": 111.1,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 15.6,
+      "left": -130.6,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 71.15,
+      "left": -105.6,
+      "attrs": { "value": "470" }
+    }
+  ],
+  "connections": [
+    ["esp:21", "$serialMonitor:RX", "", []],
+    ["esp:20", "$serialMonitor:TX", "", []],
+    ["ultrasonic1:VCC", "esp:5V", "red", ["v0"]],
+    ["ultrasonic1:TRIG", "esp:19", "green", ["v0"]],
+    ["ultrasonic1:ECHO", "esp:18", "green", ["v0"]],
+    [
+      "ultrasonic1:GND",
+      "esp:GND",
+      "black",
+      ["v9.6", "h85.2", "v-124.8", "h-326.4", "v134.4"]
+    ],
+    ["r1:2", "esp:0", "green", ["v0"]],
+    ["led1:A", "r1:1", "green", ["v0"]],
+    ["led1:C", "esp:GND", "black", ["v0", "h-18.8", "v-48", "h105.6", "v57.6"]]
+  ],
+  "serialMonitor": { "display": "terminal", "convertEol": true },
+  "dependencies": {}
+}
