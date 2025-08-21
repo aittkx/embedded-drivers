@@ -36,13 +36,13 @@ Usage examples can be found in the [examples] folder and run on the `esp32-c3` b
 - [ultrasonic_led]: measure distance and control LED based on the distance.
 - [temperature_compensation]: measure distance and compensate for temperature.
 
-[examples]: ./examples
-[ultrasonic_led]: ./examples/src/bin/ultrasonic_led.rs
-[temperature_compensation]: ./examples/src/bin/temperature_compensation.rs
+[examples]: https://github.com/aittkx/embedded-drivers/tree/main/hcsr04/examples
+[ultrasonic_led]: https://github.com/aittkx/embedded-drivers/tree/main/hcsr04/examples/src/bin/ultrasonic_led.rs
+[temperature_compensation]: https://github.com/aittkx/embedded-drivers/tree/main/hcsr04/examples/src/bin/temperature_compensation.rs
 
 ### Measure distance
 
-Full code see [ultrasonic_led.rs](./examples/src/bin/ultrasonic_led.rs)
+Full code see [ultrasonic_led.rs](https://github.com/aittkx/embedded-drivers/tree/main/hcsr04/examples/src/bin/ultrasonic_led.rs)
 
 ```rust
 #[embassy_executor::task]
@@ -104,4 +104,4 @@ Licensed under either of:
 
 - GPL-3.0 license ([LICENSE-GPLv3] or <https://www.gnu.org/licenses/gpl-3.0.html>)
 
-[LICENSE-GPLv3]: ./LICENSE
+[LICENSE-GPLv3]: https://github.com/aittkx/embedded-drivers/blob/main/hcsr04/LICENSE
