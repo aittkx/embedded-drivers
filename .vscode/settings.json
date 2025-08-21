@@ -1,0 +1,24 @@
+{
+  "editor.fontSize": 16,
+  "files.eol": "\n",
+  "editor.fontFamily": "'LXGWWenKaiMono-Medium'",
+  // -- Formatter settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  // -- Rust-analyzer settings
+  "rust-analyzer.check.allTargets": false,
+  "rust-analyzer.check.noDefaultFeatures": true,
+  "rust-analyzer.cargo.noDefaultFeatures": true,
+  "rust-analyzer.showUnlinkedFileNotification": false,
+  // Uncomment the target of your chip.
+  // "rust-analyzer.cargo.target": "thumbv7m-none-eabi",
+  "rust-analyzer.cargo.features": [],
+  "rust-analyzer.linkedProjects": []
+}
